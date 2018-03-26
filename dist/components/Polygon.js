@@ -183,6 +183,14 @@
       value: function render() {
         return null;
       }
+    }, {
+      key: 'refreshPolygon',
+      value: function refreshPolygon() {
+        if (this.polygon != null) {
+          this.polygon.setMap(null);
+        }
+        this.renderPolygon();
+      }
     }]);
 
     return Polygon;

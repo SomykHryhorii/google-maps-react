@@ -157,7 +157,8 @@ export class Map extends React.Component {
           disableDoubleClickZoom: this.props.disableDoubleClickZoom,
           noClear: this.props.noClear,
           styles: this.props.styles,
-          gestureHandling: this.props.gestureHandling
+          gestureHandling: this.props.gestureHandling,
+          fullscreenControl: this.props.fullscreenControl
         }
       );
 
@@ -285,7 +286,8 @@ Map.propTypes = {
   disableDoubleClickZoom: PropTypes.bool,
   noClear: PropTypes.bool,
   styles: PropTypes.array,
-  gestureHandling: PropTypes.string
+  gestureHandling: PropTypes.string,
+  fullscreenControl: PropTypes.bool
 };
 
 evtNames.forEach(e => (Map.propTypes[camelize(e)] = PropTypes.func));

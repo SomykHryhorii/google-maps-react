@@ -27,8 +27,8 @@ export class Polygon extends React.Component {
     if (this.props.map !== prevProps.map) {
         if (this.polygon) {
           this.polygon.setMap(null);
+          this.renderPolygon();
         }
-        this.renderPolygon();
     }
   }
 
@@ -88,6 +88,13 @@ export class Polygon extends React.Component {
 
   render() {
     return null;
+  }
+
+  refreshPolygon() {
+    if (this.polygon != null) {
+      this.polygon.setMap(null);
+    }
+    this.renderPolygon();
   }
 }
 

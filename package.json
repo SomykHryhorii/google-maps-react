@@ -1,15 +1,15 @@
 {
-  "name": "google-maps-react",
-  "version": "1.1.0",
-  "description": "Google maps container",
-  "author": "Fullstack.io <us@fullstack.io>",
+  "name": "google-maps-react-hsomyk",
+  "version": "1.0.2",
+  "description": "Google maps container by hsomyk",
+  "author": "hsomyk <somykhryhorii@gmail.com>",
   "license": "MIT",
   "options": {
     "mocha": "--require scripts/mocha_runner -t rewireify src/**/__tests__/**/*.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fullstackreact/google-maps-react.git"
+    "url": "https://github.com/SomykHryhorii/google-maps-react.git"
   },
   "main": "dist/index.js",
   "scripts": {
