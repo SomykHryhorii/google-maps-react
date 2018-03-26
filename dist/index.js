@@ -246,7 +246,8 @@
             disableDoubleClickZoom: this.props.disableDoubleClickZoom,
             noClear: this.props.noClear,
             styles: this.props.styles,
-            gestureHandling: this.props.gestureHandling
+            gestureHandling: this.props.gestureHandling,
+            fullscreenControl: this.props.fullscreenControl
           });
 
           Object.keys(mapConfig).forEach(function (key) {
@@ -386,7 +387,8 @@
     disableDoubleClickZoom: _propTypes2.default.bool,
     noClear: _propTypes2.default.bool,
     styles: _propTypes2.default.array,
-    gestureHandling: _propTypes2.default.string
+    gestureHandling: _propTypes2.default.string,
+    fullscreenControl: _propTypes2.default.bool
   };
 
   evtNames.forEach(function (e) {
